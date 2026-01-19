@@ -1,6 +1,6 @@
-# Revi MCP Server
+# Simple MCP Server
 
-A Model Context Protocol (MCP) server that provides tools for interacting with Revi's data, including customer reports, calendar events, and company information.
+A Model Context Protocol (MCP) server that provides tools for interacting with simple's data, including customer reports, calendar events, and company information.
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ A Model Context Protocol (MCP) server that provides tools for interacting with R
 
 1. Clone the repository and navigate to the project directory:
    ```bash
-   cd revi-mcp
+   cd simple-mcp
    ```
 
 2. Install dependencies:
@@ -69,9 +69,9 @@ To use this MCP server with Cursor, add it to your Cursor settings:
 ```json
 {
   "mcpServers": {
-    "revi-mcp": {
+    "simple-mcp": {
       "command": "node",
-      "args": ["/absolute/path/to/revi-mcp/build/index.js"],
+      "args": ["/absolute/path/to/simple-mcp/build/index.js"],
       "env": {
         "DB_HOST": "localhost",
         "DB_PORT": "5432",
@@ -84,7 +84,7 @@ To use this MCP server with Cursor, add it to your Cursor settings:
 }
 ```
 
-Replace `/absolute/path/to/revi-mcp` with the actual absolute path to this project directory.
+Replace `/absolute/path/to/simple-mcp` with the actual absolute path to this project directory.
 
 ### Using with Other MCP Clients
 
@@ -105,7 +105,7 @@ The server provides the following tools:
 ## Project Structure
 
 ```
-revi-mcp/
+simple-mcp/
 ├── src/
 │   ├── index.ts          # Main entry point
 │   ├── server.ts         # MCP server setup
